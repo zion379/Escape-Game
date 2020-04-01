@@ -142,6 +142,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   speed: 10
   rotationSpeed: 100
+  iscrouching: 0
 --- !u!4 &275918293 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 3c6c9c4704a5ba1408487f014cd4e1ce,
@@ -484,7 +485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037050268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.657, z: -0.017}
+  m_LocalPosition: {x: 0, y: 1.657, z: -3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 275918293}
