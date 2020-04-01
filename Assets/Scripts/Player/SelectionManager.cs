@@ -27,9 +27,9 @@ namespace SilverPhoenixGames.Escape.Interactable
         {
             if (selector == null)
             {
-                if (GameObject.Find("Canvas").transform.Find("Selector"))
+                if (GameObject.Find("BaseCanvas").transform.Find("Selector"))
                 {
-                    selector = GameObject.Find("Canvas").transform.Find("Selector").GetComponent<Image>();
+                    selector = GameObject.Find("BaseCanvas").transform.Find("Selector").GetComponent<Image>();
                 }
                 else
                 { Debug.LogError("Cannot find Selector Image."); }
