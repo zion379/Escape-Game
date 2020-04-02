@@ -9,11 +9,18 @@ namespace SilverPhoenixGames.Escape.Interactable
     public class GrabAbleObject : MonoBehaviour, IInteractable
     {
         public float MaxRange { get { return maxRange; } }
+
+        public string ObjectName { get { return objectName; } }
+        [SerializeField]
+        private string objectName = "";
+
         private float maxRange = 4f;
 
-        private Rigidbody rb;
+        public bool CanInteract { get { return canInteract; } }
+        [SerializeField]
+        private bool canInteract = false;
 
-        public string objectName = "";
+        private Rigidbody rb;
 
         private void Start()
         {

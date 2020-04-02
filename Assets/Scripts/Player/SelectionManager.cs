@@ -130,7 +130,15 @@ namespace SilverPhoenixGames.Escape.Interactable
                         currentTarget = interactable;
                         currentTarget.OnStartHover();
                     }
-                    selector.color = Color.red;
+
+                    if (currentTarget.CanInteract)
+                    {
+                        selector.color = Color.green;
+                    }
+                    else
+                    {
+                        selector.color = Color.red;
+                    }
                 }
             }
             else
