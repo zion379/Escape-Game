@@ -7,6 +7,8 @@ namespace SilverPhoenixGames.Escape.Interactable
     public interface IInteractable
     {
         float MaxRange { get; }
+        string ObjectName { get; }
+        bool CanInteract { get; }
 
         void OnStartHover();
         void OnInteract();
